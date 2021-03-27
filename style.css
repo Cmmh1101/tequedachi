@@ -285,58 +285,64 @@ q {
 
 #main {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--cream);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  position: relative;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 80px 100px 0;
-  margin: 0 auto;
-  text-align: center;
+  padding: 100px;
 }
 
-.container h2 {
+.image-desc {
+  width: 40%;
+  height: 100%;
+}
+
+.image-desc .container-img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/fluorcheese.png);
+  background-position: center left;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+ h2 {
   color: var(--chocolat);
   font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
-.container .title-span {
+.title-span {
   font-weight: 600;
 }
 
-.description {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .description p {
   color: var(--chocolat);
   font-size: 1.5rem;
   text-align: center;
   text-transform: capitalize;
-  /* line-height: 2; */
 }
 
 .description .checkmarks {
-  width: 80%;
-  margin: 3rem auto 6rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
-  transform: translateX(5%) rotate(-10deg);
+  margin: 40px 0;
 }
 
-.description .checkmarks .icons {
+/* .description .checkmarks .icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +350,7 @@ q {
   position: absolute;
   top: 0;
   left: 26%;
-}
+} */
 
 .description i {
   color: #402d1533;
@@ -369,7 +375,7 @@ q {
   font-weight: 600;
 }
 
-#banner {
+/* #banner {
   background-color: transparent;
   position: absolute;
   bottom: 0;
@@ -391,5 +397,5 @@ q {
 .main-img img {
   width: 80px;
   height: 80px;
-  margin: 0 25px;
+  margin: 0 25px; 
 }
