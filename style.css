@@ -145,6 +145,20 @@ q {
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.hero-text a {
+  color: var(--mustard);
+  text-decoration: none;
+  border: 2px solid var(--mustard);
+  padding: 10px 20px;
+}
+
+.hero-text a:hover {
+  color: var(--cream);
+  text-decoration: none;
+  background-color: var(--chocolat);
 }
 
 /* Hide the images by default */
@@ -508,7 +522,32 @@ h2 {
   margin-left: 40%;
 }
 
+/* Banner */
+
+#banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container img {
+  width: 80%;
+  height: 70%;
+}
+
+/* End of banner */
+
 /* Contact */
+
+#contact {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+}
 
 /*  RESPONSIVE */
 
