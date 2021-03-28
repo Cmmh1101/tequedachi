@@ -28,7 +28,10 @@ h6,
 p,
 span,
 a,
-q {
+q,
+label,
+input,
+textarea {
   font-family: "Roboto", sans-serif;
 }
 
@@ -576,6 +579,131 @@ h2 {
 }
 .follow-container {
   margin-right: 30px;
+}
+
+/* form */
+
+.form-container {
+  width: 40%;
+  height: auto;
+}
+
+.contactMeForm {
+  width: 100%;
+  /* max-width: 500px; */
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+  background: url(/img/tequeabout.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  /* margin-bottom: 100px; */
+}
+
+.formContainer {
+  background-color: rgba(243, 244, 245, 0.767);
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.formContainer h4 {
+  text-align: center;
+  color: var(--chocolat);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+  padding: 20px 30px;
+}
+
+.contactForm {
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  width: 95%;
+  line-height: 2;
+  color: var(--dark-grey);
+  padding-left: 20px;
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  padding-left: 10px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid var(--chocolat);
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a9aaac;
+  opacity: 1; /* Firefox */
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8a8c8f;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8a8c8f;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0 10px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.btn {
+  margin: 5% 35%;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.btn .btn-cta {
+  color: var(--dark-grey);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn .btn-cta:hover {
+  color: var(--light-gray);
+}
+
+.btn a .fas {
+  padding-right: 10px;
 }
 
 /*  RESPONSIVE */
