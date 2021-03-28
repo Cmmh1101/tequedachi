@@ -35,7 +35,7 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-.navigation {
+#navigation {
   width: 100%;
   height: auto;
   display: flex;
@@ -46,6 +46,7 @@ textarea {
   /* border-bottom: 1px solid var(--brown); */
   padding: 0 100px;
   position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
@@ -569,6 +570,12 @@ h2 {
   text-align: center;
 }
 
+#contact p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 .contact-container {
   width: 100%;
   height: auto;
@@ -576,15 +583,13 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-}
-.follow-container {
-  margin-right: 30px;
+  margin-top: 3rem;
 }
 
 /* form */
 
 .form-container {
-  width: 40%;
+  width: 60%;
   height: auto;
 }
 
@@ -644,16 +649,15 @@ label {
   width: 95%;
   line-height: 2;
   color: var(--dark-grey);
-  padding-left: 20px;
 }
 
 input {
   width: 100%;
   height: 2rem;
-  padding-left: 10px;
   border: 0;
   background-color: transparent;
   border-bottom: 2px solid var(--chocolat);
+  margin-bottom: 1rem;
 }
 
 input:focus {
@@ -665,6 +669,8 @@ input:focus {
   color: #a9aaac;
   opacity: 1; /* Firefox */
   font-weight: 300;
+  padding-top: 0.5rem;
+  letter-spacing: 1px;
 }
 
 :-ms-input-placeholder {
@@ -680,7 +686,6 @@ input:focus {
 textarea {
   width: 100%;
   height: 200px;
-  padding: 0 10px;
 }
 
 textarea:focus {
@@ -691,19 +696,89 @@ textarea:focus {
   margin: 5% 35%;
   border-radius: 5px;
   background-color: transparent;
+  border: 0;
 }
 
 .btn .btn-cta {
-  color: var(--dark-grey);
+  color: var(--chocolat);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 5px;
+  border: 2px solid var(--chocolat);
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
 }
 .btn .btn-cta:hover {
-  color: var(--light-gray);
+  color: var(--cream);
+  background-color: var(--chocolat);
+  border: none;
 }
 
 .btn a .fas {
   padding-right: 10px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-color: var(--chocolat);
+  color: var(--cream);
+}
+
+.footer-cont {
+  width: 78%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 0 20px;
+}
+
+.logo-footer {
+  margin-right: 30%;
+}
+
+.logo-footer img {
+  width: 200px;
+  height: 200px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media h4 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 3rem 0;
+}
+
+.social-media .icons i {
+  font-size: 3rem;
+  padding: 10%;
+}
+
+.social-media .icons i:hover {
+  color: var(--mustard);
+}
+
+.rights {
+  width: 100%;
+  height: auto;
+  color: var(--cream);
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: var(--mustard);
+  padding: 10px 0;
 }
 
 /*  RESPONSIVE */
