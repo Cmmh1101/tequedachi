@@ -694,7 +694,7 @@ textarea:focus {
 
 .btn {
   margin: 5% 35%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: transparent;
   border: 0;
 }
@@ -702,7 +702,7 @@ textarea:focus {
 .btn .btn-cta {
   color: var(--chocolat);
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 5px;
@@ -761,6 +761,9 @@ footer {
   font-weight: 400;
   margin: 3rem 0;
 }
+.social-media .icons a {
+  color: var(--cream);
+}
 
 .social-media .icons i {
   font-size: 3rem;
@@ -779,6 +782,12 @@ footer {
   text-align: center;
   background-color: var(--mustard);
   padding: 10px 0;
+}
+
+.rights a {
+  text-decoration: none;
+  color: var(--chocolat);
+  cursor: pointer;
 }
 
 /*  RESPONSIVE */
