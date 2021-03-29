@@ -31,6 +31,7 @@ ScrollReveal().reveal('#specialties', { delay: 500 });
 ScrollReveal().reveal('#about', { delay: 500 });
 ScrollReveal().reveal('#banner', { delay: 500 });
 ScrollReveal().reveal('#contact', { delay: 500 });
+ScrollReveal().reveal('#follow-me', { delay: 500 });
 
 // RESPONSIVE BTN
 // const menuBtn = document.getElementsByClassName('menu-btn')
